@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Квест</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/m_style.css">
+  </head>
+  <body id ="bg" background = "img/Bomba.jpg">
+    <h1 id = "timer" >game start</h1>
+    <div class="img__items">
+    <div class="img__item" >
+    <img src="img/help.jpg" alt="" >
+  </div>
+<!-- сюда можно вставить ещё контейнер с картинкой-->
+</div>
+
+   <script>
+    var modal = $modal();
+    document.querySelector('#help_button').addEventListener('click', function(e) {
+    modal.show();
+    });
+    </script>
+  <div class="inp">
+    <table class ="table" >
+      <tr>
+        <td><h2><input type="password" id="password" size="18" ></h2></td>
+      </tr>
+      <tr>
+        <td><h1><button id="button" onclick ="new_background();">ON/OFF</button></h1></td>
+      </tr>
+    </table>
+  </div>
+
+    <audio src="audio/bax.mp3" autoplay="autoplay"></audio>
+  <script src = "script/m_script.js"></script>
+  <script src = "script/t_script.js"></script>
+  <script src = "script/script.js"></script>
+  <h1  id="arg" >нажмите красную кнопку, чтобы узнать n</h1>
+  </body>
+</html>
